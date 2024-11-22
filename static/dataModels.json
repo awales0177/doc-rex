@@ -1,0 +1,46 @@
+[
+    {
+      "name": "customerDataModel",
+      "description": "Represents a user in the system.",
+      "owner":"John",
+      "Documentation":"https://docs.aleph.occrp.org",
+      "version": "1.0",
+      "createdAt": "2024-01-15",
+      "updatedAt": "2024-11-15",
+      "expirationDate": "2024-11-15",
+      "status": "active"
+    },
+    {
+      "name": "productDataModel",
+      "description": "Represents a product in the catalog.",
+      "owner":"Joe",
+      "Documentation":"https://docs.aleph.occrp.org",
+      "version": "1.0",
+      "createdAt": "2024-01-15",
+      "updatedAt": "2024-11-15",
+      "expirationDate": "2024-11-15",
+      "status": "active"
+    },
+    {
+      "name": "consumerDataModel",
+      "description": "Represents a product in the catalog.",
+      "owner":"Rob",
+      "Documentation":"https://docs.aleph.occrp.org",
+      "version": "1.0",
+      "createdAt": "2024-01-15",
+      "updatedAt": "2024-11-15",
+      "expirationDate": "2024-11-15",
+      "status": "active"
+    },
+    {
+      "name": "FTDataModel",
+      "description": "Represents a product in the catalog.",
+      "owner":"None",
+      "Documentation":"https://docs.aleph.occrp.org",
+      "version": "1.0",
+      "createdAt": "2024-01-15",
+      "updatedAt": "2024-11-15",
+      "expirationDate": "2024-11-15",
+      "status": "active"
+    }
+  ]

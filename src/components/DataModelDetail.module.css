@@ -1,0 +1,27 @@
+.detailContainer {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detailContainer h1 {
+    margin-top: 0;
+  }
+  
+  .detailContainer p {
+    margin-bottom: 10px;
+  }
+  
+  .backLink {
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .backLink:hover {
+    text-decoration: underline;
+  }
+  
+  
