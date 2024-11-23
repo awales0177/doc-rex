@@ -6,7 +6,7 @@ function Home() {
   return (
     <Layout>
       <div style={{ padding: '20px' }}>
-        <h1>Data Models</h1>
+        <h1>Data Models 🪢   </h1>
         <DataModelCards />
       </div>
     </Layout>

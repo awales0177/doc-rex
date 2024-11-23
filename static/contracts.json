@@ -1,27 +1,33 @@
 [
     {
-      "modelName": "customerDataModel",
+      "modelName": "CustomerProfileDataModel",
       "name": "CustomerAgreement",
-      "description": "Defines the customer-related terms.",
+      "description": "Defines the customer-related terms, including service level agreements, privacy terms, and user responsibilities.",
       "link": "https://docs.customer.agreement.com"
     },
     {
-      "modelName": "customerDataModel",
+      "modelName": "CustomerProfileDataModel",
       "name": "CustomerPolicy",
-      "description": "Policy for managing customer data.",
+      "description": "Policy for managing customer data, outlining data retention, processing, and privacy regulations.",
       "link": "https://docs.customer.policy.com"
     },
     {
-      "modelName": "productDataModel",
+      "modelName": "ProductCatalogDataModel",
       "name": "ProductLicense",
-      "description": "Covers licensing details for products.",
+      "description": "Covers licensing details for products, including terms of use, product rights, and restrictions.",
       "link": "https://docs.product.license.com"
     },
     {
-        "modelName": "consumerDataModel",
-        "name": "ProductLicense",
-        "description": "Covers licensing details for products.",
-        "link": "https://docs.product.license.com"
+      "modelName": "ConsumerBehaviorDataModel",
+      "name": "ConsumerDataProcessingAgreement",
+      "description": "Agreement governing the processing of consumer data, ensuring compliance with GDPR and other privacy laws.",
+      "link": "https://docs.consumer.data.processing.agreement.com"
+    },
+    {
+      "modelName": "FinancialTransactionDataModel",
+      "name": "FinancialTransactionTerms",
+      "description": "Outlines terms related to financial transactions, including transaction fees, refunds, and payment terms.",
+      "link": "https://docs.financial.transaction.terms.com"
     }
   ]
   

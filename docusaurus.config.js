@@ -88,6 +88,11 @@ const config = {
             position: 'left',
           },
           {
+            to: '/data-set', // Link to the new Data Contracts page
+            label: 'Data Sets',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',

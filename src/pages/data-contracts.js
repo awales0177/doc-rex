@@ -7,7 +7,7 @@ function DataContractsPage() {
   return (
     <Layout>
       <div style={{ padding: '20px' }}>
-        <h1>  Data Contracts</h1>
+        <h1>  Data Contracts 🤝 </h1>
         <DataContracts />
       </div>
     </Layout>

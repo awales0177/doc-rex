@@ -1,46 +1,47 @@
 [
     {
-      "name": "customerDataModel",
-      "description": "Represents a user in the system.",
-      "owner":"John",
-      "Documentation":"https://docs.aleph.occrp.org",
-      "version": "1.0",
+      "name": "CustomerProfileDataModel",
+      "description": "Represents a user in the system, including personal details, account status, and historical activity.",
+      "owner": "John",
+      "documentation": "https://docs.aleph.occrp.org/customer-profile-model",
+      "version": "1.1",
       "createdAt": "2024-01-15",
       "updatedAt": "2024-11-15",
-      "expirationDate": "2024-11-15",
+      "expirationDate": "2025-01-15",
       "status": "active"
     },
     {
-      "name": "productDataModel",
-      "description": "Represents a product in the catalog.",
-      "owner":"Joe",
-      "Documentation":"https://docs.aleph.occrp.org",
+      "name": "ProductCatalogDataModel",
+      "description": "Represents a product in the catalog, with details about pricing, availability, and product specifications.",
+      "owner": "Joe",
+      "documentation": "https://docs.aleph.occrp.org/product-catalog-model",
       "version": "1.0",
       "createdAt": "2024-01-15",
       "updatedAt": "2024-11-15",
-      "expirationDate": "2024-11-15",
+      "expirationDate": "2025-01-15",
       "status": "active"
     },
     {
-      "name": "consumerDataModel",
-      "description": "Represents a product in the catalog.",
-      "owner":"Rob",
-      "Documentation":"https://docs.aleph.occrp.org",
+      "name": "ConsumerBehaviorDataModel",
+      "description": "Represents consumer details including preferences, purchase history, and interaction with products.",
+      "owner": "Rob",
+      "documentation": "https://docs.aleph.occrp.org/consumer-behavior-model",
       "version": "1.0",
       "createdAt": "2024-01-15",
       "updatedAt": "2024-11-15",
-      "expirationDate": "2024-11-15",
+      "expirationDate": "2025-01-15",
       "status": "active"
     },
     {
-      "name": "FTDataModel",
-      "description": "Represents a product in the catalog.",
-      "owner":"None",
-      "Documentation":"https://docs.aleph.occrp.org",
+      "name": "FinancialTransactionDataModel",
+      "description": "Represents financial transactions, including payment methods, amounts, and timestamps.",
+      "owner": "None",
+      "documentation": "https://docs.aleph.occrp.org/financial-transaction-model",
       "version": "1.0",
       "createdAt": "2024-01-15",
       "updatedAt": "2024-11-15",
-      "expirationDate": "2024-11-15",
-      "status": "active"
+      "expirationDate": "2025-01-15",
+      "status": "inactive"
     }
   ]
+  

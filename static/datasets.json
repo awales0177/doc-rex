@@ -1,0 +1,98 @@
+[
+    {
+      "name": "Sales Data Q1 2024",
+      "metadata": {
+        "description": "This dataset contains sales data for Q1 2024, including transaction details, customer data, and product information.",
+        "date_received": "2024-11-01",
+        "UUID": "b7a73a18-dfa4-48c9-bcfa-b3f4bc2be1a0",
+        "link": "https://example.com/datasets/sales-q1-2024",
+        "s3_location": "s3://my-bucket/sales-data/q1-2024/",
+        "size": "120MB",
+        "data_type": "CSV",
+        "tags": ["sales", "Q1", "transactions", "2024"],
+        "createdBy": "John Doe",
+        "createdAt": "2024-11-01T10:00:00Z",
+        "lastModified": "2024-11-05T14:00:00Z",
+        "status": "Active",
+        "owner": "Sales Department",
+        "transformedToModels": [
+          "CustomerProfileDataModel",
+          "ProductCatalogDataModel",
+          "ConsumerBehaviorDataModel",
+          "FinancialTransactionDataModel"
+        ]
+      }
+    },
+    {
+      "name": "Employee Data 2023",
+      "metadata": {
+        "description": "This dataset includes employee details such as personal information, salary, and department for the year 2023.",
+        "date_received": "2024-11-03",
+        "UUID": "9b2d08b4-b72b-44f5-8904-42f56e2388fa",
+        "link": "https://example.com/datasets/employee-2023",
+        "s3_location": "s3://my-bucket/employee-data/2023/",
+        "size": "250MB",
+        "data_type": "Excel",
+        "tags": ["employee", "salary", "HR", "2023"],
+        "createdBy": "Jane Smith",
+        "createdAt": "2024-10-15T09:30:00Z",
+        "lastModified": "2024-11-03T12:00:00Z",
+        "status": "Inactive",
+        "owner": "HR Department",
+        "transformedToModels": [
+          "CustomerProfileDataModel",
+          "ProductCatalogDataModel",
+          "ConsumerBehaviorDataModel"
+        ]
+      }
+    },
+    {
+      "name": "Product Inventory 2024",
+      "metadata": {
+        "description": "This dataset contains details of product inventory, including stock levels, supplier information, and reorder points for 2024.",
+        "date_received": "2024-11-10",
+        "UUID": "0f42e83e-48bc-4b68-8b43-e7ad41e39e4f",
+        "link": "https://example.com/datasets/product-inventory-2024",
+        "s3_location": "s3://my-bucket/inventory-data/2024/",
+        "size": "500MB",
+        "data_type": "JSON",
+        "tags": ["inventory", "product", "stock", "2024"],
+        "createdBy": "Michael Johnson",
+        "createdAt": "2024-09-20T11:45:00Z",
+        "lastModified": "2024-11-09T16:30:00Z",
+        "status": "Active",
+        "owner": "Inventory Management",
+        "transformedToModels": [
+          "CustomerProfileDataModel",
+          "ProductCatalogDataModel",
+          "ConsumerBehaviorDataModel",
+          "FinancialTransactionDataModel"
+        ]
+      }
+    },
+    {
+      "name": "Customer Feedback 2024",
+      "metadata": {
+        "description": "This dataset contains customer feedback data for 2024, including survey results and sentiment analysis.",
+        "date_received": "2024-11-15",
+        "UUID": "d1f1e95a-b678-4f8c-946b-bf93e67ab231",
+        "link": "https://example.com/datasets/customer-feedback-2024",
+        "s3_location": "s3://my-bucket/customer-feedback/2024/",
+        "size": "80MB",
+        "data_type": "CSV",
+        "tags": ["customer", "feedback", "survey", "2024"],
+        "createdBy": "Emily Green",
+        "createdAt": "2024-11-01T13:00:00Z",
+        "lastModified": "2024-11-14T18:15:00Z",
+        "status": "Active",
+        "owner": "Customer Relations",
+        "transformedToModels": [
+          "CustomerProfileDataModel",
+          "ProductCatalogDataModel",
+          "ConsumerBehaviorDataModel",
+          "FinancialTransactionDataModel"
+        ]
+      }
+    }
+  ]
+  
