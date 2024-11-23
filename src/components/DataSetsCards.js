@@ -99,13 +99,6 @@ function DataSetsCards() {
               <div key={index} className={styles2.contractCard}>
                 <h3>{model}</h3>
                 <p>Description of {model} goes here.</p>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Model Details
-                </a>
               </div>
             ))}
           </div>

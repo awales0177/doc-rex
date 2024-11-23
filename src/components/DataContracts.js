@@ -48,16 +48,6 @@ function DataContracts() {
             <p>
               <strong>Description:</strong> {selectedContract.description}
             </p>
-            <p>
-              <strong>Link:</strong>{' '}
-              <a
-                href={selectedContract.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Contract
-              </a>
-            </p>
             <button
               onClick={handleBackClick}
               className={styles2.backButton}

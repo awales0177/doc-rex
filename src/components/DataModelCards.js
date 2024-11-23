@@ -104,13 +104,6 @@ function DataModelCards() {
               <div key={index} className={styles2.contractCard}>
                 <h3>{contract.name}</h3>
                 <p>{contract.description}</p>
-                <a
-                  href={contract.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Contract
-                </a>
               </div>
             ))}
           </div>
