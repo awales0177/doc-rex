@@ -1,27 +1,119 @@
-.detailContainer {
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 8px;
+/* Container for the detailed view's top part */
+.detailTopBox {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: #fdfdfd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
   
-  .detailContainer h1 {
-    margin-top: 0;
+  /* Title styling */
+  .detailTopBox h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: #333;
   }
   
-  .detailContainer p {
-    margin-bottom: 10px;
+  /* Info item styling */
+  .detailTopBox p {
+    margin: 6px 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
   }
   
-  .backLink {
-    margin-top: 20px;
-    display: inline-block;
-    text-decoration: none;
+  /* Strong tags for labels */
+  .detailTopBox p strong {
+    font-weight: bold;
+    color: #222;
+  }
+  
+  /* Documentation link styling */
+  .detailTopBox a {
     color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
   }
   
-  .backLink:hover {
+  .detailTopBox a:hover {
     text-decoration: underline;
   }
   
+  /* Back button styling */
+  .detailTopBox .backButton {
+    align-self: flex-end;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 12px 12px 0;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .detailTopBox .backButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .detailTopBox .backButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
+  }
+  
+  /* Container for contract cards */
+  .contractContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  
+  /* Individual contract card */
+  .contractCard {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 16px);
+    max-width: calc(30% - 16px);
+    min-width: 250px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .contractCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .contractCard h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .contractCard p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .contractCard a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contractCard a:hover {
+    text-decoration: underline;
+  }
   

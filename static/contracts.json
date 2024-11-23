@@ -1,0 +1,21 @@
+[
+    {
+      "modelName": "customerDataModel",
+      "name": "CustomerAgreement",
+      "description": "Defines the customer-related terms.",
+      "link": "https://docs.customer.agreement.com"
+    },
+    {
+      "modelName": "customerDataModel",
+      "name": "CustomerPolicy",
+      "description": "Policy for managing customer data.",
+      "link": "https://docs.customer.policy.com"
+    },
+    {
+      "modelName": "productDataModel",
+      "name": "ProductLicense",
+      "description": "Covers licensing details for products.",
+      "link": "https://docs.product.license.com"
+    }
+  ]
+  
