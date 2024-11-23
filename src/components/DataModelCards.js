@@ -130,16 +130,27 @@ function DataModelCards() {
 
           {/* Display filtered models as cards */}
           <div className={styles.cardContainer}>
-            {filteredModels.map((model, index) => (
-              <div
-                key={index}
-                className={styles.card}
-                onClick={() => handleCardClick(model)}
-              >
-                <h3>{model.name}</h3>
-                <p>{model.description}</p>
-              </div>
-            ))}
+            {filteredModels.map((model, index) => {
+              // Get the number of contracts for the model
+              const modelContracts = getContractsForModel(model.name);
+              return (
+                <div
+                  key={index}
+                  className={styles.card}
+                  onClick={() => handleCardClick(model)}
+                >
+                  <h3>{model.name}</h3>
+                  <p>{model.description}</p>
+
+                  {/* Emoji and contract count at the bottom-right corner */}
+                  <div className={styles.contractCount}>
+                    <span role="img" aria-label="contracts">
+                    🔥   {modelContracts.length}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       )}

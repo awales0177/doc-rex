@@ -16,6 +16,12 @@
       "name": "ProductLicense",
       "description": "Covers licensing details for products.",
       "link": "https://docs.product.license.com"
+    },
+    {
+        "modelName": "consumerDataModel",
+        "name": "ProductLicense",
+        "description": "Covers licensing details for products.",
+        "link": "https://docs.product.license.com"
     }
   ]
   
