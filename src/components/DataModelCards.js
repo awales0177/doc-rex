@@ -145,7 +145,9 @@ function DataModelCards() {
                   {/* Emoji and contract count at the bottom-right corner */}
                   <div className={styles.contractCount}>
                     <span role="img" aria-label="contracts">
-                    🔥   {modelContracts.length}
+                    🤝  {modelContracts.length}
+                    &ensp;&ensp;
+                    🔥    {modelContracts.length}
                     </span>
                   </div>
                 </div>
