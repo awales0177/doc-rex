@@ -1,6 +1,6 @@
 [
     {
-      "name": "CustomerProfileDataModel",
+      "name": "CustomerProfile",
       "description": "Represents a user in the system, including personal details, account status, and historical activity.",
       "owner": "John",
       "documentation": "https://docs.aleph.occrp.org/customer-profile-model",
@@ -8,10 +8,11 @@
       "createdAt": "2024-01-15",
       "updatedAt": "2024-11-15",
       "expirationDate": "2025-01-15",
-      "status": "active"
+      "status": "active",
+      "transformedDatasetsCount": 606
     },
     {
-      "name": "ProductCatalogDataModel",
+      "name": "ProductCatalog",
       "description": "Represents a product in the catalog, with details about pricing, availability, and product specifications.",
       "owner": "Joe",
       "documentation": "https://docs.aleph.occrp.org/product-catalog-model",
@@ -19,10 +20,11 @@
       "createdAt": "2024-01-15",
       "updatedAt": "2024-11-15",
       "expirationDate": "2025-01-15",
-      "status": "active"
+      "status": "active",
+      "transformedDatasetsCount": 5
     },
     {
-      "name": "ConsumerBehaviorDataModel",
+      "name": "ConsumerBehavior",
       "description": "Represents consumer details including preferences, purchase history, and interaction with products.",
       "owner": "Rob",
       "documentation": "https://docs.aleph.occrp.org/consumer-behavior-model",
@@ -30,10 +32,11 @@
       "createdAt": "2024-01-15",
       "updatedAt": "2024-11-15",
       "expirationDate": "2025-01-15",
-      "status": "active"
+      "status": "active",
+      "transformedDatasetsCount": 2
     },
     {
-      "name": "FinancialTransactionDataModel",
+      "name": "FinancialTransaction",
       "description": "Represents financial transactions, including payment methods, amounts, and timestamps.",
       "owner": "None",
       "documentation": "https://docs.aleph.occrp.org/financial-transaction-model",
@@ -41,7 +44,8 @@
       "createdAt": "2024-01-15",
       "updatedAt": "2024-11-15",
       "expirationDate": "2025-01-15",
-      "status": "inactive"
+      "status": "inactive",
+      "transformedDatasetsCount": 0
     }
   ]
   

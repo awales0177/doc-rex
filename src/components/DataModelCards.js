@@ -142,12 +142,18 @@ function DataModelCards() {
                   <h3>{model.name}</h3>
                   <p>{model.description}</p>
 
+
                   {/* Emoji and contract count at the bottom-right corner */}
                   <div className={styles.contractCount}>
                     <span role="img" aria-label="contracts">
-                    🤝  {modelContracts.length}
-                    &ensp;&ensp;
-                    🔥    {modelContracts.length}
+                      🤝 {modelContracts.length} Contracts
+
+                    {/* Display transformed datasets count */}
+                    <div className={styles.contractCount}>
+                    <span role="img" aria-label="datasets">
+                    🔥 {model.transformedDatasetsCount} Datasets
+                    </span>
+                  </div>
                     </span>
                   </div>
                 </div>

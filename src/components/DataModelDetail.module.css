@@ -1,4 +1,5 @@
 /* Container for the detailed view's top part */
+[data-theme='light']
 .detailTopBox {
     border: 1px solid #ddd;
     border-radius: 12px;
@@ -10,6 +11,19 @@
     flex-direction: column;
     gap: 16px;
   }
+
+[data-theme='dark']
+.detailTopBox {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: #5b5353;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
   
   /* Title styling */
   .detailTopBox h1 {
@@ -77,11 +91,26 @@
   }
   
   /* Individual contract card */
+  [data-theme='light']
   .contractCard {
     border: 1px solid #ddd;
     border-radius: 12px;
     padding: 20px;
     background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 16px);
+    max-width: calc(30% - 16px);
+    min-width: 250px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  /* Individual contract card */
+  [data-theme='dark']
+  .contractCard {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #5b5353;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1 1 calc(30% - 16px);
     max-width: calc(30% - 16px);

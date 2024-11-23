@@ -135,7 +135,7 @@ function DataSetsCards() {
                 >
                   <h3>{dataset.name}</h3>
                   <p>{dataset.metadata.description}</p>
-                  <p> 🪢 {datasetModels.length} </p> {/* Display number of data models */}
+                  <p> 🪢 {datasetModels.length} Models</p> {/* Display number of data models */}
                 </div>
               );
             })}

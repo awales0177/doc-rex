@@ -16,10 +16,10 @@
         "status": "Active",
         "owner": "Sales Department",
         "transformedToModels": [
-          "CustomerProfileDataModel",
-          "ProductCatalogDataModel",
-          "ConsumerBehaviorDataModel",
-          "FinancialTransactionDataModel"
+          "CustomerProfile",
+          "ProductCatalog",
+          "ConsumerBehavior",
+          "FinancialTransaction"
         ]
       }
     },
@@ -40,9 +40,9 @@
         "status": "Inactive",
         "owner": "HR Department",
         "transformedToModels": [
-          "CustomerProfileDataModel",
-          "ProductCatalogDataModel",
-          "ConsumerBehaviorDataModel"
+          "CustomerProfile",
+          "ProductCatalog",
+          "ConsumerBehavior"
         ]
       }
     },
@@ -63,10 +63,10 @@
         "status": "Active",
         "owner": "Inventory Management",
         "transformedToModels": [
-          "CustomerProfileDataModel",
-          "ProductCatalogDataModel",
-          "ConsumerBehaviorDataModel",
-          "FinancialTransactionDataModel"
+          "CustomerProfile",
+          "ProductCatalog",
+          "ConsumerBehavior",
+          "FinancialTransaction"
         ]
       }
     },
@@ -87,10 +87,10 @@
         "status": "Active",
         "owner": "Customer Relations",
         "transformedToModels": [
-          "CustomerProfileDataModel",
-          "ProductCatalogDataModel",
-          "ConsumerBehaviorDataModel",
-          "FinancialTransactionDataModel"
+          "CustomerProfile",
+          "ProductCatalog",
+          "ConsumerBehavior",
+          "FinancialTransaction"
         ]
       }
     }

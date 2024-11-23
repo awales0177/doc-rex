@@ -7,8 +7,20 @@
   }
   
   /* Card Styling */
+  [data-theme='light']
   .card {
     background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  [data-theme='dark']
+  .card {
+    background: #5b5353;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 8px;
