@@ -90,8 +90,8 @@ function DataSetsCards() {
             </p>
           </div>
 
-          {/* Models Section */}
-          <h2>Data Models ({selectedDataset.metadata.transformedToModels.length})</h2>
+          {/* Products Section */}
+          <h2>Data Products ({selectedDataset.metadata.transformedToModels.length})</h2>
           <div className={styles2.contractContainer}>
             {selectedDataset.metadata.transformedToModels.map((model, index) => (
               <div key={index} className={styles2.contractCard}>

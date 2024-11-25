@@ -35,7 +35,7 @@
     width: 0; /* Start width from 0 */
     animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite, disappearCursor 0s 4s forwards; /* Add animation for typing and cursor */
     text-align: left; /* Align text to left */
-    padding-left: 140px; /* Shift the text slightly to the right */
+    padding-left: 0px; /* Shift the text slightly to the right */
   }
   
   /* Light Mode Styling */
