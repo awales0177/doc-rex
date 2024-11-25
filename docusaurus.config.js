@@ -134,7 +134,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} DataKnot - Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} MetaKnot - Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

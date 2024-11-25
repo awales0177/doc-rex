@@ -1,10 +1,20 @@
-.pageContainer {
+
+  /* Import the VT323 font locally using the .ttf file */
+@font-face {
+    font-family: 'VT323';
+    src: url('../../assets/fonts/VT323/Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* General Page Container Styling */
+  .pageContainer {
     background-size: 30%; /* Smaller background image */
     background-position: center;
     background-repeat: no-repeat; /* Ensure the background doesn't repeat */
     height: 100vh; /* Full viewport height */
     color: white; /* Make text readable over the image */
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Default font for rest of the page */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,8 +22,10 @@
     text-align: center;
   }
   
+  /* Header Styling */
   .header h1 {
-    font-size: 48px;
+    font-family: 'VT323', monospace; /* Apply VT323 font to the title only */
+    font-size: 80px;
     margin-bottom: 10px;
     color: #333; /* Default color for light mode */
     display: inline-block; /* Prevent shifting and keep text in place */
@@ -21,9 +33,9 @@
     white-space: nowrap; /* Prevent text from wrapping */
     border-right: 4px solid #333; /* Simulate cursor by adding a border */
     width: 0; /* Start width from 0 */
-    animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite, disappearCursor 0s 8s forwards; /* Add animation for cursor disappearance */
+    animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite, disappearCursor 0s 4s forwards; /* Add animation for typing and cursor */
     text-align: left; /* Align text to left */
-    padding-left: 200px; /* Shift the text slightly to the right */
+    padding-left: 140px; /* Shift the text slightly to the right */
   }
   
   /* Light Mode Styling */
@@ -31,32 +43,13 @@
     color: #333; /* Ensure the title is dark enough in light mode */
   }
   
-  /* Animation for typing effect */
-  @keyframes typing {
-    to {
-      width: 100%; /* Reveal the text */
-    }
-  }
-  
-  /* Animation for blinking cursor */
-  @keyframes blink {
-    50% {
-      border-color: transparent; /* Cursor disappears */
-    }
-  }
-  
-  /* Animation to make cursor disappear after typing */
-  @keyframes disappearCursor {
-    to {
-      border-color: transparent; /* Make the cursor disappear */
-    }
-  }
-  
   .header p {
     font-size: 20px;
     color: #555; /* Subtle dark text for light mode */
+    font-family: Arial, sans-serif; /* Ensure the paragraph uses the default font */
   }
   
+  /* Feature Cards Container Styling */
   .featureContainer {
     display: flex;
     justify-content: space-around;
@@ -66,6 +59,7 @@
     gap: 20px; /* Space between cards */
   }
   
+  /* Feature Card Styling */
   .featureCard {
     padding: 20px;
     border-radius: 10px;
@@ -122,5 +116,26 @@
   
   [data-theme='dark'] .cardLink:hover {
     text-decoration: underline;
+  }
+  
+  /* Animation for typing effect */
+  @keyframes typing {
+    to {
+      width: 100%; /* Reveal the text */
+    }
+  }
+  
+  /* Animation for blinking cursor */
+  @keyframes blink {
+    50% {
+      border-color: transparent; /* Cursor disappears */
+    }
+  }
+  
+  /* Animation to make cursor disappear after typing */
+  @keyframes disappearCursor {
+    to {
+      border-color: transparent; /* Make the cursor disappear */
+    }
   }
   
