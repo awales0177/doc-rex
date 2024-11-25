@@ -1,0 +1,126 @@
+.pageContainer {
+    background-size: 30%; /* Smaller background image */
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure the background doesn't repeat */
+    height: 100vh; /* Full viewport height */
+    color: white; /* Make text readable over the image */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #333; /* Default color for light mode */
+    display: inline-block; /* Prevent shifting and keep text in place */
+    overflow: hidden; /* Hide content that overflows */
+    white-space: nowrap; /* Prevent text from wrapping */
+    border-right: 4px solid #333; /* Simulate cursor by adding a border */
+    width: 0; /* Start width from 0 */
+    animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite, disappearCursor 0s 8s forwards; /* Add animation for cursor disappearance */
+    text-align: left; /* Align text to left */
+    padding-left: 200px; /* Shift the text slightly to the right */
+  }
+  
+  /* Light Mode Styling */
+  [data-theme='light'] .header h1 {
+    color: #333; /* Ensure the title is dark enough in light mode */
+  }
+  
+  /* Animation for typing effect */
+  @keyframes typing {
+    to {
+      width: 100%; /* Reveal the text */
+    }
+  }
+  
+  /* Animation for blinking cursor */
+  @keyframes blink {
+    50% {
+      border-color: transparent; /* Cursor disappears */
+    }
+  }
+  
+  /* Animation to make cursor disappear after typing */
+  @keyframes disappearCursor {
+    to {
+      border-color: transparent; /* Make the cursor disappear */
+    }
+  }
+  
+  .header p {
+    font-size: 20px;
+    color: #555; /* Subtle dark text for light mode */
+  }
+  
+  .featureContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    gap: 20px; /* Space between cards */
+  }
+  
+  .featureCard {
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px; /* Increased width for wider cards */
+    text-align: center;
+    border: 1px solid #ccc; /* Add a subtle border */
+    background-color: transparent; /* Transparent background by default */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Light Mode Styling */
+  [data-theme='light'] .featureCard {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background for light mode */
+    border: 1px solid #ddd; /* Lighter border for light mode */
+  }
+  
+  [data-theme='light'] .featureCard h2 {
+    color: #333; /* Dark text for light mode */
+  }
+  
+  [data-theme='light'] .featureCard p {
+    color: #555; /* Subtle dark text for paragraphs */
+  }
+  
+  [data-theme='light'] .cardLink {
+    color: #00d4ff; /* Highlight link color for light mode */
+  }
+  
+  [data-theme='light'] .cardLink:hover {
+    text-decoration: underline;
+  }
+  
+  /* Dark Mode Styling */
+  [data-theme='dark'] .header h1 {
+    color: #fff; /* Ensure the title is light in dark mode */
+  }
+  
+  [data-theme='dark'] .featureCard {
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent dark background for dark mode */
+    border: 1px solid #333; /* Darker border for dark mode */
+  }
+  
+  [data-theme='dark'] .featureCard h2 {
+    color: #fff; /* White text for headings in dark mode */
+  }
+  
+  [data-theme='dark'] .featureCard p {
+    color: #ccc; /* Light gray text for paragraphs in dark mode */
+  }
+  
+  [data-theme='dark'] .cardLink {
+    color: #00d4ff; /* Highlight link color for dark mode */
+  }
+  
+  [data-theme='dark'] .cardLink:hover {
+    text-decoration: underline;
+  }
+  

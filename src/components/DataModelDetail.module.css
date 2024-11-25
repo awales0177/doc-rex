@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    position: relative; /* To position the close button within the box */
 }
 
 [data-theme='dark']
@@ -23,6 +24,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    position: relative; /* To position the close button within the box */
 }
 
 /* Title styling */
@@ -58,15 +60,30 @@
     color: #fff; /* Lighter strong text for dark mode */
 }
 
-/* Documentation link styling */
-.detailTopBox a {
-    color: #007bff;
-    font-weight: 600;
-    text-decoration: none;
+/* Close (X) button styling */
+.detailTopBox .closeButton {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Dark color for light mode */
+    cursor: pointer;
+    transition: color 0.2s ease;
 }
 
-.detailTopBox a:hover {
-    text-decoration: underline;
+[data-theme='dark'] .detailTopBox .closeButton {
+    color: #fff; /* White color for dark mode */
+}
+
+.detailTopBox .closeButton:hover {
+    color: #ff0000; /* Red color on hover */
+}
+
+.detailTopBox .closeButton:focus {
+    outline: none;
 }
 
 /* Back button styling */

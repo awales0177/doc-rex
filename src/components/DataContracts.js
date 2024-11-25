@@ -44,16 +44,17 @@ function DataContracts() {
       {selectedContract ? (
         <div className={styles2.detailContainer}>
           <div className={styles2.detailTopBox}>
+            {/* X Button for closing the detail view */}
+            <button
+              onClick={handleBackClick}
+              className={styles2.closeButton}
+            >
+              X
+            </button>
             <h1>{selectedContract.name}</h1>
             <p>
               <strong>Description:</strong> {selectedContract.description}
             </p>
-            <button
-              onClick={handleBackClick}
-              className={styles2.backButton}
-            >
-              Back to Contracts
-            </button>
           </div>
         </div>
       ) : (

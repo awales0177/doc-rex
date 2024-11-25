@@ -35,7 +35,7 @@ function DataSetsCards() {
     setSelectedDataset(dataset);
   };
 
-  // Handle back to the list view
+  // Handle closing the detail view
   const handleBackClick = () => {
     setSelectedDataset(null);
   };
@@ -45,6 +45,13 @@ function DataSetsCards() {
       {selectedDataset ? (
         <div className={styles2.detailContainer}>
           <div className={styles2.detailTopBox}>
+            {/* X Button for closing the detail view */}
+            <button
+              onClick={handleBackClick}
+              className={styles2.closeButton}
+            >
+              X
+            </button>
             <h1>{selectedDataset.name}</h1>
             <p>
               <strong>Description:</strong> {selectedDataset.metadata.description}
@@ -67,13 +74,7 @@ function DataSetsCards() {
             </p>
             <p>
               <strong>S3 Location:</strong>{' '}
-              <a
-                href={selectedDataset.metadata.s3_location}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
                 {selectedDataset.metadata.s3_location}
-              </a>
             </p>
             <p>
               <strong>Size:</strong> {selectedDataset.metadata.size}
@@ -87,9 +88,6 @@ function DataSetsCards() {
             <p>
               <strong>Created By:</strong> {selectedDataset.metadata.createdBy}
             </p>
-            <button onClick={handleBackClick} className={styles2.backButton}>
-              Back to Datasets
-            </button>
           </div>
 
           {/* Models Section */}

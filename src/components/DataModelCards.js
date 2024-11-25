@@ -57,6 +57,13 @@ function DataModelCards() {
       {selectedModel ? (
         <div className={styles2.detailContainer}>
           <div className={styles2.detailTopBox}>
+            {/* X Button for closing the detail view */}
+            <button
+              onClick={handleBackClick}
+              className={styles2.closeButton}
+            >
+              X
+            </button>
             <h1>{selectedModel.name}</h1>
             <p>
               <strong>Description:</strong> {selectedModel.description}
@@ -89,12 +96,6 @@ function DataModelCards() {
                 View Documentation
               </a>
             </p>
-            <button
-              onClick={handleBackClick}
-              className={styles2.backButton}
-            >
-              Back to Data Models
-            </button>
           </div>
 
           {/* Contracts Section */}
@@ -135,19 +136,18 @@ function DataModelCards() {
                   <h3>{model.name}</h3>
                   <p>{model.description}</p>
 
-
                   {/* Emoji and contract count at the bottom-right corner */}
                   <div className={styles.contractCount}>
                     <span role="img" aria-label="contracts">
                       🤝 {modelContracts.length} Contracts
+                    </span>
 
                     {/* Display transformed datasets count */}
                     <div className={styles.contractCount}>
-                    <span role="img" aria-label="datasets">
-                    🔥 {model.transformedDatasetsCount} Datasets
-                    </span>
-                  </div>
-                    </span>
+                      <span role="img" aria-label="datasets">
+                        🔥 {model.transformedDatasetsCount} Datasets
+                      </span>
+                    </div>
                   </div>
                 </div>
               );
